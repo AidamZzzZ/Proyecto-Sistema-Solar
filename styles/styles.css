@@ -117,7 +117,7 @@ select {
   left: 15%;
 }
 
-@media (width <= 700px) {
+@media (width <= 800px) {
   fieldset {
     display: grid;
   }
@@ -138,7 +138,7 @@ select {
   .text {
     justify-content: center;
     position: relative;
-    left: 23%;
+    left: 22%;
     height: auto;
   }
 }
