@@ -6,14 +6,13 @@
 }
 
 body {
-  width: 100%;
-  max-width: 70%;
-  margin: auto;
+  width: 90%;
+  margin: 0 auto;
   background-image: url(/images/galaxy.gif);
 }
 
 header {
-  margin-top: 20px;
+  margin: 20px auto;
   text-align: center;
   color: rgb(88, 255, 255);
 }
@@ -23,7 +22,9 @@ fieldset {
   margin: 30px auto;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 input {
@@ -57,9 +58,10 @@ select {
 .wrapper {
   background-color: rgba(177, 170, 170, 0.3);
   height: 60vh;
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0 auto;
   color: white;
@@ -70,9 +72,9 @@ select {
   background-color: rgb(171, 159, 159, 0.3);
   text-align: center;
   color: white;
-  padding: 20px;
-  width: 350px;
-  height: 130px;
+  padding: 30px;
+  width: 40%;
+  height: 140px;
   margin-right: 20px;
   visibility: hidden;
   position: absolute;
@@ -82,15 +84,15 @@ select {
 .result {
   background-color: rgba(143, 131, 131, 0.5);
   color: white;
-  width: 110px;
-  height: 110px;
+  width: 100px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 4px auto;
   padding-left: 10px;
   font-size: 24px;
-  border-radius: 50%;
+  border-radius: 70%;
 }
 
 .planet {
@@ -108,8 +110,43 @@ select {
 }
 
 .img-planet {
-  width: 350px;
+  width: 30%;
   height: auto;
-  position: fixed;
-  left: 25%;
+  margin-right: 20px;
+  position: relative;
+  left: 15%;
+}
+
+@media (width <= 700px) {
+  fieldset {
+    display: grid;
+  }
+  .img-planet {
+    display: flex;
+    left: 30%;
+    width: 40%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .wrapper {
+    display: grid;
+    align-content: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .text {
+    justify-content: center;
+    margin-top: 40px;
+    position: relative;
+    left: 20%;
+  }
+}
+
+@media (width <= 400) {
+  .img-planet {
+    margin-bottom: 10px;
+  }
+  .text {
+    margin-top: 10px;
+  }
 }
