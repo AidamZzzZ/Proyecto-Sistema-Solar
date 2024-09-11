@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Proyecto de sistema solar, para calcular el peso de un objeto en distintos planetas"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="" />
+    <meta
+      property="og:description"
+      content="Proyecto de sistema solar, para calcular el peso de un objeto en distintos planetas"
+    />
+    <meta property="og:image" content="./styles/styles.css" />
+    <meta property="og:image:alt" content="Planeta" />
+    <title>Calculadora de peso de un objeto en distintos planetas</title>
+    <link rel="icon" href="./images/image-project.png" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Calcular el peso de un objeto en un planeta</h1>
+    </header>
+    <main>
+      <fieldset>
+        <label for="mass-input"></label>
+        <input
+          type="input"
+          id="mass-input"
+          name="mass-calculate"
+          placeholder="Masa en kilogramos..."
+        />
+        <label for="planet-select"></label>
+        <select name="mass-input" id="planet-select">
+          <option value="">--seleccionar planeta--</option>
+          <option value="1">MERCURIO</option>
+          <option value="2">VENUS</option>
+          <option value="3">TIERRA</option>
+          <option value="4">LUNA</option>
+          <option value="5">MARTE</option>
+          <option value="6">JUPITER</option>
+          <option value="7">SATURNO</option>
+          <option value="8">URANO</option>
+          <option value="9">NEPTUNO</option>
+          <option value="10">PLUTON</option>
+        </select>
+        <button>Calcular peso</button>
+      </fieldset>
+      <div class="wrapper">
+        <img src="" alt="" class="img-planet" />
+        <div class="warning-style">
+          <p class="warning"></p>
+        </div>
+        <div class="text">
+          <p class="message">
+            El peso del objeto en <span class="planet"></span>
+          </p>
+          <div class="circle">
+            <p class="result"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
