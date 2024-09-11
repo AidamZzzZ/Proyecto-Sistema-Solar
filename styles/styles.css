@@ -125,7 +125,7 @@ select {
     display: flex;
     left: 30%;
     width: 40%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     margin-top: 30px;
   }
   .wrapper {
@@ -133,20 +133,21 @@ select {
     align-content: start;
     justify-content: center;
     flex-direction: column;
+    max-width: 400px;
   }
   .text {
     justify-content: center;
-    margin-top: 40px;
     position: relative;
-    left: 20%;
+    left: 23%;
+    height: auto;
   }
 }
 
-@media (width <= 400) {
+@media (width <= 400px) {
   .img-planet {
-    margin-bottom: 10px;
+    margin-top: 10px;
   }
   .text {
-    margin-top: 10px;
+    top: 5%;
   }
 }
